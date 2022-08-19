@@ -9,7 +9,7 @@
     android:background="@color/white">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/hometoolbar"
+        android:id="@+id/homeToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
@@ -34,12 +34,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="20dp"
-            app:backgroundTint="@color/blue"
-            app:tint="@color/white"
-            app:maxImageSize="47dp"
             android:src="@drawable/ic_add_task"
+            app:backgroundTint="@color/blue"
             app:fabCustomSize="75dp"
-            />
+            app:maxImageSize="47dp"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:contentDescription="@string/tambah_task" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

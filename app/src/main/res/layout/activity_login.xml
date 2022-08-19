@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity$LoginActivity"
+    tools:context=".LoginActivity"
     android:background="@color/white">
 
     <LinearLayout
@@ -37,16 +37,18 @@
             android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
+
             <EditText
                 android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/email"
-                android:textColor="@color/black"
+                android:autofillHints=""
                 android:fontFamily="@font/segoe_ui"
-                android:textSize="18sp"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:autofillHints="" />
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- password -->
@@ -59,16 +61,18 @@
             android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
+
             <EditText
                 android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/sandi"
-                android:textColor="@color/black"
+                android:autofillHints=""
                 android:fontFamily="@font/segoe_ui"
-                android:textSize="18sp"
+                android:hint="@string/sandi"
                 android:inputType="textPassword"
-                android:autofillHints="" />
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
