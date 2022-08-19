@@ -5,4 +5,13 @@
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/blue</item>
     </style>
+
+    <style name="Theme.KegiatanKu.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.KegiatanKu.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.KegiatanKu.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

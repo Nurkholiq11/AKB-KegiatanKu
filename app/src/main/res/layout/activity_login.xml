@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".LoginActivity$LoginActivity"
     android:background="@color/white">
 
     <LinearLayout
@@ -38,7 +38,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/email"
@@ -60,7 +60,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/sandi"

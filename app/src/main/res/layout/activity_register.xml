@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".LoginActivity$LoginActivity"
     android:background="@color/white">
 
     <LinearLayout
@@ -38,7 +38,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/nama"
@@ -60,7 +60,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/email"
@@ -82,7 +82,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/sandi"
@@ -104,7 +104,7 @@
             app:hintTextColor="@color/black"
             app:boxStrokeColor="@color/black">
             <EditText
-                android:id="@+id/repassword"
+                android:id="@+id/editRePassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/ulangi_sandi"
@@ -116,7 +116,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"

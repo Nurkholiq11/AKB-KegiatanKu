@@ -17,7 +17,7 @@
         tools:ignore="DataExtractionRules"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashScreen"
             android:exported="true"
             android:noHistory="true"
             android:screenOrientation="portrait"
@@ -28,31 +28,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--        <activity-->
-        <!--            android:name=".SplashScreen"-->
-        <!--            android:screenOrientation="portrait"-->
-        <!--            android:exported="false"-->
-        <!--            tools:ignore="LockedOrientationActivity" />-->
-        <!--        <activity-->
-        <!--            android:name=".OnboardingActivity"-->
-        <!--            android:screenOrientation="portrait"-->
-        <!--            android:exported="false"-->
-        <!--            tools:ignore="LockedOrientationActivity" />-->
-        <!--        <activity-->
-        <!--            android:name=".LoginActivity"-->
-        <!--            android:screenOrientation="portrait"-->
-        <!--            android:exported="false"-->
-        <!--            tools:ignore="LockedOrientationActivity" />-->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".RegisterActivity"
-            android:screenOrientation="portrait"
             android:exported="false"
+            android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <!--        <activity-->
-        <!--            android:name=".MainActivity"-->
-        <!--            android:screenOrientation="portrait"-->
-        <!--            android:exported="false"-->
-        <!--            tools:ignore="LockedOrientationActivity" />-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

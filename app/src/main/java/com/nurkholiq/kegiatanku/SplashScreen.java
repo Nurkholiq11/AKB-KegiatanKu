@@ -23,15 +23,15 @@ public class SplashScreen extends AppCompatActivity {
 
         onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
         boolean isFirst = onBoardingScreen.getBoolean("firstTime", true);
-//        if (isFirst) {
-//            SharedPreferences.Editor editor = onBoardingScreen.edit();
-//            editor.putBoolean("firstTime", false);
-//            editor.commit();
+        if (isFirst) {
+            SharedPreferences.Editor editor = onBoardingScreen.edit();
+            editor.putBoolean("firstTime", false);
+            editor.commit();
 
             OnBoardingScreen();
-//        } else {
-//            mainActivity();
-//        }
+        } else {
+            mainActivity();
+        }
     }
 
     private void OnBoardingScreen() {
@@ -48,7 +48,7 @@ public class SplashScreen extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
                 startActivity(intent);
             }
         }, 2800);
